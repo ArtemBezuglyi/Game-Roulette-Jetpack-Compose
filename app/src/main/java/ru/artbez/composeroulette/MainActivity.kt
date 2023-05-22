@@ -8,16 +8,19 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import ru.artbez.composeroulette.table_screen.MainScreen
 import ru.artbez.composeroulette.ui.theme.COMPOSErouletteTheme
-import ru.artbez.composeroulette.ui.theme.GreenBG
+import ru.artbez.composeroulette.ui.theme.GreenTable
+import ru.artbez.composeroulette.utils.MAIN
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        MAIN = this
         setContent {
             COMPOSErouletteTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = GreenBG
+                    color = GreenTable
                 ) {
                     MainScreen()
                 }

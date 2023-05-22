@@ -1,7 +1,7 @@
 package ru.artbez.composeroulette.utils
 
-object Numbers {
-    val list = listOf(
+object RouletteNumbers {
+    val listOfRouletteNumbers = listOf(
         0,
         32,
         15,
